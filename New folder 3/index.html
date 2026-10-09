@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aayam AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo">✦</div>
+      <div>
+        <h1>Aayam AI</h1>
+        <p>Your AI assistant</p>
+      </div>
+      <span class="status">● Online</span>
+    </header>
+
+    <main id="chat">
+      <div class="welcome">
+        <div class="big-logo">✦</div>
+        <h2>Hey! I'm Aayam AI 👋</h2>
+        <p>Ask me anything. Let's learn something new!</p>
+        <div class="suggestions">
+          <button onclick="ask('Teach me HTML basics')">
+            💻 Learn HTML
+          </button>
+          <button onclick="ask('Explain science simply')">
+            🔬 Science
+          </button>
+          <button onclick="ask('Give me a fun fact')">
+            ✨ Fun fact
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <form id="chatForm">
+      <input
+        id="message"
+        type="text"
+        placeholder="Message Aayam AI..."
+        autocomplete="off"
+        required
+      >
+      <button id="send" type="submit">➤</button>
+    </form>
+
+    <footer>AI can make mistakes. Check important information.</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
